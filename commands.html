@@ -4,7 +4,7 @@
   <title>My Bot - Commands</title>
   <style>
     body {
-      background-color: #F9EBEA;
+      background-color: #c2984f;
       font-family: Arial, sans-serif;
     }
     h1 {
@@ -12,7 +12,7 @@
       text-align: center;
     }
     p {
-      color: #4CAF50;
+      color: #086918;
       font-size: 20px;
       font-weight: bold;
       text-align: center;
@@ -27,8 +27,9 @@
       padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       border-radius: 10px;
-      background-color: #FFF;
+      background-color: #f0c06e;
       margin-top: 50px;
+      position: relative; /* added this */
     }
     table {
       margin-top: 20px;
@@ -39,16 +40,41 @@
     }
     th {
       background-color: #4CAF50;
-      color: #FFF;
+      color: #080603;
       padding: 10px;
     }
     td {
       border: 2px solid #4CAF50;
       padding: 10px;
     }
-    .back-btn {
-      background-color: #4CAF50;
+    .button-add {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .button-add {
+      background-color: #11a64f;
       color: #FFF;
+      border: none;
+      font-size: 16px;
+      font-weight: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      top: 50px;
+      right: 50px;
+      position: absolute;
+    }
+    .button-add:hover {
+      background-color: #FFF;
+      color: #4CAF50;
+      border: 2px solid #4CAF50;
+    }
+    .back-btn {
+      background-color: #11a64f;
+      color: #FFF;
+      border: none;
       font-size: 16px;
       font-weight: bold;
       padding: 10px 20px;
@@ -60,6 +86,7 @@
     .back-btn:hover {
       background-color: #FFF;
       color: #4CAF50;
+      border: 2px solid #4CAF50;
     }
     .logo {
       max-width: 200px;
@@ -69,6 +96,7 @@
 </head>
 <body>
   <div class="container">
+    <button class="button button-add" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1083043203751612487&permissions=4398046511095&scope=bot', '_blank')">Add to server</button>
     <img class="logo" src="cU1J2z6u7Cscopy.png" alt="Bot Logo">
     <h1>IDFC | Bot - Commands</h1>
     <table>
@@ -107,7 +135,7 @@
         </tr>
       </tbody>
     </table>
-    <button class="button" onclick="location.href='bot.html'">back</button>
+    <button class="button back-btn" onclick="location.href='bot.html'">back</button>
   </div>
   <div class="footer">
     <p>&copy; 2023 IDFC | Bot. All rights reserved.</p>
